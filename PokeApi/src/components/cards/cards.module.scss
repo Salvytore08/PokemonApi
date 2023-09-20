@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 200px;
+    background-color: grey;
+}
+
+.card{
+    position: relative;
+    transform: rotate(20deg);
+    width: 240px;
+    height: 340px;
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 6px 3px 7px -3px rgba(224,224,224,1);
+    margin-bottom: 50px;
+    border: 20px solid white;
+    background-color: rgb(252, 153, 87);
+}
+
+.card::before {
+    content: "CHARIZARD #006";
+    position: absolute;
+    margin-top: 64%;
+    transform: rotate(-20deg);
+    margin-left: -14px;
+    width: 115%;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: bold;
+  }
+
+.card:hover {
+    transform: rotate(0deg);
+    transition: all 0.5s;
+    box-shadow: 6px 3px 7px -3px rgba(224,224,224,1);
+}
+
+.card img {
+    position: absolute;
+    top: -20%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
